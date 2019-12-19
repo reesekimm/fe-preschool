@@ -74,7 +74,7 @@ const getArea = (...args) => {
       Number.isInteger(args[2]) && 1 < args[2]
         ? args[1] === 1
           ? queue.push(args[0], numbers, getSumOfCircles(...numbers))
-          : queue.push(args[0], numbers, "유효한 인자를 입력해 주세요.")
+          : queue.push(args[0], numbers, "[Error] 유효한 인자를 입력해 주세요.")
         : queue.push(args[0], numbers, getCircle(...numbers));
       break;
     case "rect":
@@ -87,7 +87,7 @@ const getArea = (...args) => {
       queue.push(args[0], numbers, getCylinder(...numbers));
       break;
     default:
-      console.log("유효한 인자를 입력해 주세요.");
+      console.log("[Error] 유효한 인자를 입력해 주세요.");
   }
 };
 
