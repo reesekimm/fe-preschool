@@ -85,6 +85,8 @@ vscode 상단에 환경 선택 메뉴가 나타나면 원하는 개발환경을 
 
 > 참고) 변수 정보는 에디터 영역에서 '변수명에 마우스 오버'하여 확인할 수도 있다.
 
+<br />
+
 2. [**WATCH**](https://code.visualstudio.com/docs/editor/debugging#_data-inspection)
 
 코드의 실행에 따른 여러 개의 변수 또는 표현식(expression)의 값을 표시하는 섹션이다.
@@ -98,6 +100,8 @@ WATCH 섹션에서 검사할 변수는 현재 디버깅 중인 프로그램 안�
 변수의 타입을 체크하거나 변수가 가리키는 배열의 길이를 체크하는 등 유효한 자바스크립트 표현식이라면 무엇이든 추가할 수 있다.
 
 <img src="../imgs/1-6.PNG" alt="expressions" width="350" />
+
+<br />
 
 3. **CALL STACK**
 
@@ -133,6 +137,8 @@ WATCH 섹션에서 검사할 변수는 현재 디버깅 중인 프로그램 안�
 
 콜스택 역시 스택이기 때문에 LIFO 방식으로 동작한다. 함수가 호출된 순서대로 스택에 추가되고(push)되고, 호출 순서와는 반대로 맨 마지막에 호출된 함수부터 실행되면서 스택에서 제거(pop)된다.
 
+<br />
+
 4. [**LOADED SCRIPTS**](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_access-loaded-scripts)
 
 외부 모듈을 포함해서 현재 실행중인 코드의 스코프에 load된 모든 script를 보여준다.
@@ -141,13 +147,15 @@ LOADED SCRIPTS 섹션에 있는 script파일에 breakpoint를 추가하여 디�
 
 `ctrl` + `F4`를 눌러 추가할 script를 선택할 수 있다.
 
+<br />
+
 5. [**BREAKPOINTS**](<(https://code.visualstudio.com/docs/editor/debugging#_breakpoints)>)
 
 사용자가 지정한 모든 breakpoint를 보여주는 섹션이다. 체크박스를 사용해서 특정 breakpoint를 활성화 또는 비활성화 할 수 있다.
 
 활성화 상태인 breakpoint는 빨간색 동그라미가 표시되고, 비활성화 상태인 breakpoint는 회색 동그라미가 표시된다.
 
-<img src="../imgs/1-11.PNG" alt="breakpoints" width="400" />
+<img src="../imgs/1-11.png" alt="breakpoints" width="400" />
 
 [node.js breakpoint 설정 >](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_breakpoints)
 
