@@ -11,9 +11,10 @@
 
 */
 
+const { pow, PI } = Math;
+
 const getCircle = r => {
-  const circle =
-    checkArgs(r) || `반지름${r} 원의 넓이: ${Math.pow(r, 2) * Math.PI}`;
+  const circle = checkArgs(r) || `반지름${r} 원의 넓이: ${pow(r, 2) * PI}`;
   console.log(circle);
   return circle;
 };
@@ -33,11 +34,10 @@ const getTrapezoid = (a, b, h) => {
 };
 
 const getCylinder = (r, h) => {
-  const areaOfCircle = Math.pow(r, 2) * Math.PI;
+  const areaOfCircle = pow(r, 2) * PI;
   const cylinder =
     checkArgs(r, h) ||
-    `반지름${r} 높이${h} 원기둥의 넓이: ${2 * areaOfCircle +
-      2 * r * Math.PI * h}`;
+    `반지름${r} 높이${h} 원기둥의 넓이: ${2 * areaOfCircle + 2 * r * PI * h}`;
   console.log(cylinder);
   return cylinder;
 };
