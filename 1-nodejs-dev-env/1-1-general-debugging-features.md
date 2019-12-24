@@ -16,7 +16,7 @@ VSCode에서 디버깅을 시작하는 방법과 디버깅시 제공되는 인�
 
 - breakpoint는 아래 이미지에서 화살표가 가리키는 부분(에디터 영역의 왼쪽 마진)을 클릭하거나, 코드를 클릭한 후 `F9`를 눌러서 추가(또는 제거)할 수 있다.
 
-  <img src="../imgs/1-7.PNG" alt="breakpoint" width="350" />
+  <img src="./imgs/1-7.PNG" alt="breakpoint" width="350" />
 
 - breakpoint가 지정되면 위와 같이 빨간색 점이 표시된다.
 
@@ -30,15 +30,15 @@ VSCode에서 디버깅을 시작하는 방법과 디버깅시 제공되는 인�
 >
 > - 방법2 ─ vscode 상단 메뉴의 `Debug > Start Debugging`을 선택한다.
 >
->   <img src="../imgs/1-3.PNG" alt="debug menu" width="300" />
+>   <img src="./imgs/1-3.PNG" alt="debug menu" width="300" />
 >
 > - 방법3 ─ vscode 왼쪽에 위치한 메뉴에서 'Debug and Run'을 선택하고 Debug > 버튼을 클릭한다.
 >
->   <img src="../imgs/1-2.PNG" alt="debug and run" width="300" />
+>   <img src="./imgs/1-2.PNG" alt="debug and run" width="300" />
 
 vscode 상단에 환경 선택 메뉴가 나타나면 원하는 개발환경을 선택하여 디버깅을 시작한다.
 
-<img src="../imgs/1-1.PNG" alt="select env menu" width="500" />
+<img src="./imgs/1-1.PNG" alt="select env menu" width="500" />
 
 <br />
 
@@ -60,7 +60,7 @@ vscode 상단에 환경 선택 메뉴가 나타나면 원하는 개발환경을 
 
 디버깅을 시작하면 vscode에서 다음과 같은 요소들이 제공된다. 해당 요소들을 이용해서 코드 실행을 제어하고 디버깅 결과를 확인할 수 있다.
 
-![debugging](../imgs/1-8.PNG)
+![debugging](./imgs/1-8.PNG)
 
 (1) Debug View<br />
 (2) Debug Toolbar<br />
@@ -93,13 +93,13 @@ vscode 상단에 환경 선택 메뉴가 나타나면 원하는 개발환경을 
 
 WATCH 섹션의 빈 공간을 더블클릭 하거나 우측 상단의 `+` 버튼을 클릭하여 검사하고자 하는 변수 또는 표현식을 추가할 수 있다.
 
-<img src="../imgs/1-4.PNG" alt="add expression" width="300" />
+<img src="./imgs/1-4.PNG" alt="add expression" width="300" />
 
 WATCH 섹션에서 검사할 변수는 현재 디버깅 중인 프로그램 안에 정의된 것이어야 하며, 표현식 역시 프로그램 내에서 정의된 변수에 대한 내용이어야 한다.
 
 변수의 타입을 체크하거나 변수가 가리키는 배열의 길이를 체크하는 등 유효한 자바스크립트 표현식이라면 무엇이든 추가할 수 있다.
 
-<img src="../imgs/1-6.PNG" alt="expressions" width="350" />
+<img src="./imgs/1-6.PNG" alt="expressions" width="350" />
 
 <br />
 
@@ -107,7 +107,7 @@ WATCH 섹션에서 검사할 변수는 현재 디버깅 중인 프로그램 안�
 
 함수와 메서드가 호출되는 순서가 표시되는 섹션으로, 프로그램의 실행 흐름을 파악하는데 유용하다.
 
-<img src="../imgs/1-9.PNG" alt="call stack" width="400" />
+<img src="./imgs/1-9.PNG" alt="call stack" width="400" />
 
 <br />
 
@@ -127,7 +127,7 @@ WATCH 섹션에서 검사할 변수는 현재 디버깅 중인 프로그램 안�
 
 이렇게 나중에 넣은 데이터를 먼저 처리하는 특성을 LIFO("Last In, First Out")라고 한다.
 
-  <img src="../imgs/1-10.PNG" alt="call stack" width="400" />
+  <img src="./imgs/1-10.PNG" alt="call stack" width="400" />
 
 <br />
 
@@ -155,7 +155,7 @@ LOADED SCRIPTS 섹션에 있는 script파일에 breakpoint를 추가하여 디�
 
 활성화 상태인 breakpoint는 빨간색 동그라미가 표시되고, 비활성화 상태인 breakpoint는 회색 동그라미가 표시된다.
 
-<img src="../imgs/1-11.png" alt="breakpoints" width="400" />
+<img src="./imgs/1-11.png" alt="breakpoints" width="400" />
 
 [node.js breakpoint 설정 >](https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_breakpoints)
 
@@ -165,7 +165,7 @@ LOADED SCRIPTS 섹션에 있는 script파일에 breakpoint를 추가하여 디�
 
 디버깅 및 코드의 실행을 제어하는 기능들을 모아놓은 툴바이다. 각각 다음과 같은 기능을 수행한다.
 
-<img src="../imgs/1-5.PNG" alt="debug toolbar" width="300" />
+<img src="./imgs/1-5.PNG" alt="debug toolbar" width="300" />
 
 1. **Continue / Pause** ─ `F5`
 
