@@ -4,21 +4,18 @@ const countTasks = () => {
   let todo = 0,
     doing = 0,
     done = 0;
+
+  const countingFuncs = {
+    todo: () => todo++,
+    doing: () => doing++,
+    done: () => done++
+  };
+
   todos.forEach(data => {
-    switch (data.status) {
-      case "todo":
-        todo++;
-        break;
-      case "doing":
-        doing++;
-        break;
-      case "done":
-        done++;
-        break;
-      default:
-        return;
-    }
+    const { status } = data;
+    countingFuncs[status] && countingFuncs[status]();
   });
+
   console.log(`현재상태: todo: ${todo}개, doing: ${doing}개, done: ${done}개`);
 };
 
